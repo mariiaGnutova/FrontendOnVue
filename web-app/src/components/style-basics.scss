@@ -1,0 +1,191 @@
+
+:root {
+  --white-two: #ffffff;
+  --white:#f9f9f9;
+  --site-family: Montserrat;
+  --page-margin:-20px;
+  --navColor:#303030;
+}
+%text-css{
+  font-family: Montserrat;
+  font-stretch: normal;
+  font-style: normal;
+  letter-spacing: normal;
+  margin: 0;
+}
+
+
+body {
+ background-color: var(--white);
+  .Homework_Front-End_01 {
+    font-family: var(--site-family);
+    
+    .mobile {
+      display: block;}
+  }
+  
+  .navbar{
+    background-color: var(--navColor);
+    width: 100%;
+    height: 60px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+
+    .navbar-content{
+        width: 100%;
+        margin: auto;
+        padding: 10px;
+      }
+
+      .logo{
+        
+        .logo_horizontal-2{
+        width: 37px;
+        height: 37px;
+        fill: var(--white);
+    }  
+        
+          .logo_horizontal-1 {
+           display: none;
+         }
+    
+    }
+    @media screen and (min-width: 768px){
+        .navbar-content{
+          width: 80%;
+          margin: auto;
+
+          .logo_horizontal-1 {
+             width: 137px;
+             height: 38px;
+             object-fit: contain;
+             display: block;
+          }
+          .mobile{
+            display: none;
+          }
+          
+        }
+        
+    }
+
+  }
+
+  header{
+    margin-left: var(--page-margin);
+  }
+
+  footer{
+    margin-left: var(--page-margin);
+    position: fixed;
+    bottom: 0px;
+    margin-bottom: var(--page-margin);
+   img{ 
+    height: auto;
+    width: 100%;}
+  }
+
+}
+
+.app{
+  width: 100%;
+}
+
+*{
+    box-sizing: border-box;
+}
+
+.header-image{
+  position: relative;
+  text-align: center;
+  margin-top: 50px;
+  width: fit-content;
+  .head-image{
+    height: auto;
+    width: 110%;
+    margin-left: var(--page-margin);
+  }
+  .centerOnImage{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: fit-content;
+    .first-line{
+      @extend %text-css;
+      font-size: 2em;
+      font-weight: normal;
+      line-height: 1.5;
+      color: #cfb995;
+      
+    }
+    .second-line{
+      @extend %text-css;
+      font-size: 1.38em *2/3em;
+      font-weight: 600;
+      line-height: 1.45;
+      color: var(--white-two);
+      margin-bottom: 0.75em;
+      }
+      @media screen and (min-width: 768px){
+        .second-line{
+          margin-bottom: inherit;
+        }
+      }
+      @media screen and (min-width: 414px){
+        .first-line{
+          font-size: 3em;
+        }
+        .second-line{
+          font-size: 1.38em;
+          margin-bottom: 1.25em;
+        }
+      }
+
+  }
+
+  .web{
+    display: none;
+  }
+  @media screen and (min-width: 768px){
+    .web{
+      display: block;
+    }
+  }
+  .search-wrapper{
+    margin-top: 1.8em;
+  .search{
+    width: 458px;
+    height: 48px;
+    border-radius: 4px;
+    border: solid 1px var(--white-two);
+    background: rgba(255,255,255,0.0);
+    padding-left: 16px;
+    padding-top: auto;
+    padding-bottom: auto;
+    font-size: 0.94em;
+    @extend %text-css;
+    font-weight: normal;
+    line-height: 1.33;
+  }
+
+  ::-webkit-input-placeholder { color: #b2b2b2;
+    } 
+  :-moz-placeholder { color: #b2b2b2;  }
+  ::-moz-placeholder { color: #b2b2b2;}
+  :-ms-input-placeholder { color: #b2b2b2; }
+  
+  #input_img{
+    position:absolute;
+    bottom:2px;
+    right:5px;
+    width:24px;
+    height:24px;
+    fill: var(--white-two);
+}
+  }
+}
+
+
