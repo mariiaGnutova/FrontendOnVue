@@ -1,34 +1,34 @@
 <template>
 <div>
-  <div id="header">
+  <!-- <div id="header">
     <Header/>
-  </div>
+  </div> -->
 
-  <div id="footer">
+  <!-- <div id="footer">
     <Footer/>
-  </div>
+  </div> -->
 
   </div>
 </template>
 
 <script>
-import Header from './components/Header.vue'
-import Footer from './components/Footer.vue'
+// import Header from './components/Header.vue'
+// import Footer from './components/Footer.vue'
 
-export default {
-  name: 'header',
-  components: {
-    Header
-  }
+// export default {
+//   name: 'header',
+//   components: {
+//     Header
+//   }
+ 
+// }
 
-}
-
-export const FooterComponent = { 
-  name: 'footer',
-  components: {
-    Footer
-  }
-}
+// export const FooterComponent = { 
+//   name: 'footer',
+//   components: {
+//     Footer
+//   }
+// }
 
 </script>
 

@@ -3,7 +3,7 @@
   --white-two: #ffffff;
   --white:#f9f9f9;
   --site-family: Montserrat;
-  --page-margin:-20px;
+  --page-margin: 0px;
   --navColor:#303030;
 }
 %text-css{
@@ -17,6 +17,8 @@
 
 body {
  background-color: var(--white);
+ margin: 0;
+ text-align: center;
   .Homework_Front-End_01 {
     font-family: var(--site-family);
     
