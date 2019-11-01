@@ -1,0 +1,66 @@
+@import "style-basics.scss";
+
+.filter-container {
+  width: var(--contentWidth);
+  margin: auto;
+  margin-top: 75px-14px;
+
+  .filter-parent {
+
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: flex-start;
+   // align-content: flex-start;
+   
+
+    .filter {
+   
+      border-radius: 2px;
+      height: 46px;
+      width: auto;
+      margin: 0 10px 10px 10px;
+      color: var(--white-two);
+
+      //flex-basis: 26%;
+      flex-basis: auto;
+     
+    //   flex-grow: 1;
+      @extend %text-css;
+   
+
+      div {
+        padding: 14px 14px 14px 14px;
+        text-align: center;
+        margin-top: auto;
+        margin-bottom: auto;
+        text-transform: uppercase;
+        
+      }
+    }
+    .item-0{
+        background-color:#ff5b5b;
+      }
+      .item-1{
+        background-color: var(--pastel-orange);
+      }
+      .item-2{
+        background-color: #ffbe5b;
+    }
+    .item-3{
+        background-color: var(--light-gold);
+    }
+    .item-4{
+        background-color: var(--kiwi-green);
+    }
+    .item-5{
+        background-color: var(--weird-green); 
+    }
+    .item-6{
+        background-color: #57dbe6;
+    }
+    .item-7{
+        border: solid 1px #d1bb91;
+        color: #cfb995;
+    }
+  }
+}
