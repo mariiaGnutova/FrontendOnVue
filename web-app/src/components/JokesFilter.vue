@@ -9,6 +9,7 @@
         @click="() => handleClick(item.id)"
       >
         <div>{{ item.message }}</div>
+        <img class="forLastElement" src="../assets/pathCopy7.svg" alt="arrow">
       </div>
     </div>
   </div>

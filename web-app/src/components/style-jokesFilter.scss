@@ -1,17 +1,19 @@
 @import "style-basics.scss";
 
 .filter-container {
-  width: var(--contentWidth);
-  margin: auto;
+  
   margin-top: 75px-14px;
 
   .filter-parent {
-    display: grid;
-    grid-template-columns: repeat( auto-fit, minmax(200px, 1fr));
-    grid-gap: 16px 20px;
+    display: flex;
+    flex-flow: wrap;
+
+    .forLastElement {
+      display: none;
+    }
 
     .filter {
-      border-radius: 2px;
+      border-radius: 0px;
       height: 48px;
       width: auto;
       color: var(--white-two);
@@ -53,6 +55,30 @@
     .item-7 {
       border: solid 1px #d1bb91;
       color: #cfb995;
+    }
+
+    .filter:active{
+      filter: brightness(85%);
+    }
+  }
+  @media screen and (min-width: 768px) {
+    .filter-parent {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      grid-gap: 16px 20px;
+      .filter {
+        border-radius: 2px;
+      }
+    }
+  }
+  .filter:last-child {
+    position: relative;
+      div{
+        padding-right: 40px;
+      }
+    .forLastElement {
+      display: block;
+     @extend %arrow-down;
     }
   }
 }

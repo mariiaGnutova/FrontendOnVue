@@ -3,7 +3,7 @@
   --white: #f9f9f9;
   --site-family: Montserrat;
   --navColor: #303030;
-  --contentWidth: 80%;
+  --contentWidth: 90%;
   --white-three: #ecebe9;
   --tea: #68b680;
   --lightish-red: #ff3750;
@@ -19,12 +19,26 @@
   --kiwi-green: #8fe360;
   --weird-green: #57e690;
 }
+
+
+@media screen and (min-width: 768px) {
+  :root {
+    --contentWidth: 80%;
+  }
+}
+
 %text-css {
   font-family: Montserrat;
   font-stretch: normal;
   font-style: normal;
   letter-spacing: normal;
   margin: 0;
+}
+
+%arrow-down{
+  position: absolute;
+    bottom: 14px;
+    right: 16px;
 }
 
 body {

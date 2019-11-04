@@ -3,7 +3,7 @@
 .header-image {
   position: relative;
   text-align: center;
-  margin-top: 50px;
+  margin-top: 60px;
   width: fit-content;
   .head-image {
     height: auto;
@@ -55,6 +55,7 @@
     }
   }
   .search-wrapper {
+    position: relative;
     margin: 1.8em 0;
     .search {
       width: 458px;
@@ -69,6 +70,12 @@
       @extend %text-css;
       font-weight: normal;
       line-height: 1.33;
+    }
+    input[type="text"] {
+      font-size: 1em;
+      @extend %text-css;
+      line-height: 1.33;
+      color: var(--white-two);
     }
 
     ::-webkit-input-placeholder {
@@ -91,6 +98,11 @@
       width: 24px;
       height: 24px;
       fill: var(--white-two);
+    }
+    #input_img:active {
+      top: 2px;
+      width: 20px;
+      height: 20px;
     }
   }
 }
