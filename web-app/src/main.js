@@ -4,7 +4,7 @@ import './components/style-basics.scss';
 import './components/style-header.scss';
 import './components/style-navi.scss';
 import './components/style-jokesFilter.scss';
-import './components/style-jokes.scss';
+import './components/style-home.scss';
 import App from './App.vue'
 import router from './router';
 

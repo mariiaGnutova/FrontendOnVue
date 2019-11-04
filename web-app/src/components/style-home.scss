@@ -1,9 +1,113 @@
-// @import "style-basics.scss";
-// .section{
-//     display:flex;
-//     width: 360px;
-//     height: 264px;
-//     border-radius: 2px;
-//     border: solid 1px var(--white-three);
-//     background-color: var(--white-two);
-// }
+@import "style-basics.scss";
+.sections {
+  width: var(--contentWidth);
+  margin: auto;
+  hr {
+    margin: 41px 0 0 0;
+    height: 2px;
+    border: solid 1px var(--white-three);
+  }
+  .flag {
+    width: 119px;
+    height: 22px;
+    border-radius: 11px;
+    background-color: var(--weird-green);
+    text-transform: uppercase;
+    font-size: 12px;
+    @extend %text-css;
+    font-weight: 600;
+    line-height: 1.83;
+    color: var(--white-two);
+  }
+
+  .jokes-container {
+    margin-top: 45px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));
+    grid-gap: 16px 20px;
+
+    .group {
+      height: auto;
+      position: relative;
+      border-radius: 2px;
+      border: solid 1px var(--white-three);
+      background-color: var(--white-two);
+      .section {
+        .joke {
+          padding: 16px;
+          @extend %text-css;
+
+          h3 {
+            font-size: 16px;
+            font-weight: 600;
+            line-height: 1.25;
+            color: #303030;
+            margin: 0;
+            text-align: left;
+            img {
+              width: 8px;
+              height: 14px;
+              margin-right: 8px;
+            }
+          }
+          p {
+            padding-top: 6px;
+            font-size: 14px;
+            font-weight: normal;
+            line-height: 1.57;
+            color: #303030;
+            margin: 0;
+            text-align: left;
+            margin-bottom: 68px-16px;
+          }
+          a {
+            text-transform: uppercase;
+            font-size: 14px;
+            font-weight: 600;
+            line-height: 1.43;
+            text-align: right;
+            color: #cfb995;
+            position: absolute;
+            bottom: 16px;
+            right: 16px+26px;
+            text-decoration: none;
+            svg {
+              width: 21px;
+              height: 14px;
+              object-fit: contain;
+              position: absolute;
+              top: 2px;
+              margin: 0 0 0 8px;
+              // background-color: #d0ba93;
+            }
+          }
+        }
+      }
+    }
+    .group:hover {
+      box-shadow: 0 1px 7px 0 rgba(0, 0, 0, 0.15);
+    }
+  }
+
+  .view-more {
+    margin: auto;
+    margin-top: 64px;
+    margin-bottom: 64px;
+    width: 206px;
+    height: 48px;
+    border-radius: 2px;
+    border: solid 1px #d1bb91;
+    text-transform: uppercase;
+    @extend %text-css;
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 1.43;
+    text-align: center;
+    color: #cfb995;
+    background-color: transparent;
+    position: relative;
+    img {
+      @extend %arrow-down;
+    }
+  }
+}
