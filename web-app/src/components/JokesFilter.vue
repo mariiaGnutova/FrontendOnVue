@@ -5,19 +5,18 @@
         class="filter"
         :class="['item-' + index]"
         v-for="(item, index) in items"
-        v-bind:key="item"
+        :key="item.message"
+        @click="() => handleClick(item.id)"
       >
         <div>{{ item.message }}</div>
       </div>
-      
     </div>
   </div>
 </template>
-
        
 <script>
 export default {
-  name: "Jokes",
+  name: "JokesFilter",
   data() {
     return {
       items: [
@@ -29,34 +28,17 @@ export default {
         { message: "social jokes" },
         { message: "puns" },
         { message: "view all" }
-      ]
+      ],
+      active: null
     };
+  },
+  methods: {
+    handleClick(id) {
+      this.active = id
+    }
   }
 };
 
-
-// export const SetStyleBasis = { 
-//   name: 'setStyleBasis',
-//   data(){
-//     var widthofClient = document.body.clientWidth;
-//     var filterElements = document.getElementsByClassName('filter');
-//     var widestElement = 0;
-    
-//     for (let element of filterElements){
-//       if( element.clientWidth > widestElement){
-//         widestElement = element.clientWidth;
-//       }
-//     }
-//     let flexBasis = Math.floor(widthofClient* 0.8/(widestElement + 50));
-
-//     var newFlexBasis = 80/flexBasis;
-//     for (let element of filterElements){
-//        element.style.flexBasis = newFlexBasis + '%';
-
-//     }
-
-//   }
-//  }
 
 </script>
 // v-attr manipulates an element’s attributes, 

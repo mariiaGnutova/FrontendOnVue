@@ -1,66 +1,66 @@
 @import "style-basics.scss";
-
-.filter-container {
-  width: var(--contentWidth);
+.jokes-container {
   margin: auto;
-  margin-top: 75px-14px;
+  margin-top: 45px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));
+  grid-gap: 16px 20px;
+  width: var(--contentWidth);
+  .group {
+    height: auto;
 
-  .filter-parent {
+    border-radius: 2px;
+    border: solid 1px var(--white-three);
+    background-color: var(--white-two);
+    .section {
+      .joke {
+        padding: 16px;
+        @extend %text-css;
 
-    display: flex;
-    flex-flow: row wrap;
-    justify-content: flex-start;
-   // align-content: flex-start;
-   
+        h3 {
+          font-size: 16px;
+          font-weight: 600;
+          line-height: 1.25;
+          color: #303030;
+          margin: 0;
+          text-align: left;
 
-    .filter {
-   
-      border-radius: 2px;
-      height: 46px;
-      width: auto;
-      margin: 0 10px 10px 10px;
-      color: var(--white-two);
-
-      //flex-basis: 26%;
-      flex-basis: auto;
-     
-    //   flex-grow: 1;
-      @extend %text-css;
-   
-
-      div {
-        padding: 14px 14px 14px 14px;
-        text-align: center;
-        margin-top: auto;
-        margin-bottom: auto;
-        text-transform: uppercase;
-        
+          height: 20px;
+          font-family: Montserrat;
+          font-size: 16px;
+          font-weight: 600;
+        }
+        p {
+          padding-top: 6px;
+          font-size: 14px;
+          font-weight: normal;
+          line-height: 1.57;
+          color: #303030;
+          margin: 0;
+          text-align: left;
+        }
       }
-    }
-    .item-0{
-        background-color:#ff5b5b;
-      }
-      .item-1{
-        background-color: var(--pastel-orange);
-      }
-      .item-2{
-        background-color: #ffbe5b;
-    }
-    .item-3{
-        background-color: var(--light-gold);
-    }
-    .item-4{
-        background-color: var(--kiwi-green);
-    }
-    .item-5{
-        background-color: var(--weird-green); 
-    }
-    .item-6{
-        background-color: #57dbe6;
-    }
-    .item-7{
-        border: solid 1px #d1bb91;
-        color: #cfb995;
     }
   }
+  .group:hover{
+    box-shadow: 0 1px 7px 0 rgba(0, 0, 0, 0.15);
+  }
+}
+
+.view-more {
+  margin: auto;
+  margin-top: 64px;
+  margin-bottom: 64px;
+  width: 206px;
+  height: 48px;
+  border-radius: 2px;
+  border: solid 1px #d1bb91;
+  text-transform: uppercase;
+  @extend %text-css;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 1.43;
+  text-align: center;
+  color: #cfb995;
+  background-color: transparent;
 }

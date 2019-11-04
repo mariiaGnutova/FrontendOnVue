@@ -14,12 +14,12 @@ export default {
       }
       let flexBasis = Math.floor((widthofClient * 0.8) / (widestElement+20));
 
-      var newFlexBasis = 100 / flexBasis;
+      var newFlexBasis = Math.floor(100 / flexBasis);
       for (let element of filterElements) {
-        element.style.flexBasis = newFlexBasis + "%";
+        element.style.flexBasis = newFlexBasis-3 + "%";
       }
     }
-    setBasis();
+    setBasis(); 
 
     window.addEventListener('resize', function() {
         var filterElements = document.getElementsByClassName("filter");

@@ -26,8 +26,5 @@
   <script>
 export default {
   name: "Navi",
-  data() {
-    return {};
-  }
 };
 </script>

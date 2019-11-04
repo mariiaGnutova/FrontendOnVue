@@ -1,0 +1,58 @@
+@import "style-basics.scss";
+
+.filter-container {
+  width: var(--contentWidth);
+  margin: auto;
+  margin-top: 75px-14px;
+
+  .filter-parent {
+    display: grid;
+    grid-template-columns: repeat( auto-fit, minmax(200px, 1fr));
+    grid-gap: 16px 20px;
+
+    .filter {
+      border-radius: 2px;
+      height: 48px;
+      width: auto;
+      color: var(--white-two);
+      flex-basis: auto;
+      @extend %text-css;
+
+      div {
+        padding: 14px 14px 14px 14px;
+        text-align: center;
+        margin-top: auto;
+        margin-bottom: auto;
+        text-transform: uppercase;
+        font-size: 14px;
+        font-weight: 600;
+        line-height: 1.43;
+      }
+    }
+    .item-0 {
+      background-color: #ff5b5b;
+    }
+    .item-1 {
+      background-color: var(--pastel-orange);
+    }
+    .item-2 {
+      background-color: #ffbe5b;
+    }
+    .item-3 {
+      background-color: var(--light-gold);
+    }
+    .item-4 {
+      background-color: var(--kiwi-green);
+    }
+    .item-5 {
+      background-color: var(--weird-green);
+    }
+    .item-6 {
+      background-color: #57dbe6;
+    }
+    .item-7 {
+      border: solid 1px #d1bb91;
+      color: #cfb995;
+    }
+  }
+}

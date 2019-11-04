@@ -18,7 +18,6 @@
           <input
             class="search"
             type="text"
-            v-model="search"
             placeholder="How can we make you laugh today?"
           />
           <img src="../assets/bitmap/search-copy.svg" id="input_img" />
@@ -38,11 +37,7 @@ export default {
       message: "The Joke Bible",
       message2: "Daily Laughs for you and yours"
     };
-  }
-};
-
-export const NaviComponent = {
-  name: "navi",
+  },
   components: {
     Navi
   }
