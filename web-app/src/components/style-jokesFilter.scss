@@ -1,7 +1,6 @@
 @import "style-basics.scss";
 
 .filter-container {
-  
   margin-top: 75px-14px;
 
   .filter-parent {
@@ -19,6 +18,7 @@
       color: var(--white-two);
       flex-basis: auto;
       @extend %text-css;
+      cursor: pointer;
 
       div {
         padding: 14px 14px 14px 14px;
@@ -57,9 +57,7 @@
       color: #cfb995;
     }
 
-    .filter:active{
-      filter: brightness(85%);
-    }
+    
   }
   @media screen and (min-width: 768px) {
     .filter-parent {
@@ -73,12 +71,15 @@
   }
   .filter:last-child {
     position: relative;
-      div{
-        padding-right: 40px;
-      }
+    div {
+      padding-right: 40px;
+    }
     .forLastElement {
       display: block;
-     @extend %arrow-down;
+      @extend %arrow-down;
     }
   }
+}
+.button-activ:active {
+  filter: brightness(75%);
 }

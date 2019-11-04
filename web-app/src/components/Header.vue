@@ -15,11 +15,7 @@
         <h1 class="first-line">{{ message}}</h1>
         <h3 class="second-line">{{ message2 }}</h3>
         <div class="search-wrapper web">
-          <input
-            class="search"
-            type="text"
-            placeholder="How can we make you laugh today?"
-          />
+          <input class="search" type="text" placeholder="How can we make you laugh today?" />
           <img src="../assets/bitmap/search-copy.svg" id="input_img" />
         </div>
       </div>

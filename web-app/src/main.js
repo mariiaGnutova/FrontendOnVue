@@ -5,12 +5,13 @@ import './components/style-header.scss';
 import './components/style-navi.scss';
 import './components/style-jokesFilter.scss';
 import './components/style-home.scss';
-import App from './App.vue'
+import './components/style-blog.scss';
+import App from './App.vue';
 import router from './router';
 
-Vue.config.productionTip = false
+Vue.config.productionTip = false;
 
-new Vue({
+new Vue ({
   router,
-  render: h => h(App)
-}).$mount('#app')
+  render: h => h (App),
+}).$mount ('#app');

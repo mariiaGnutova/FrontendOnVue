@@ -16,7 +16,10 @@
             </h3>
             <p>{{joke.description}}</p>
 
-            <router-link :to="{ path: 'joke', query: { id: joke.id }}">
+            <router-link
+              :to="{ path: 'joke', query: { id: joke.id }}"
+              @click.native="() => scrollToTop()"
+            >
               see stats
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -35,7 +38,7 @@
         </div>
       </div>
     </div>
-    <button class="view-more">
+    <button class="view-more button-activ">
       view more
       <img src="../assets/pathCopy7.svg" alt="arrow" />
     </button>
@@ -55,6 +58,11 @@ export default {
     return {
       jokes: BLOGENTRIES.jokes
     };
+  },
+  methods: {
+    scrollToTop() {
+      window.scrollTo(0, 0);
+    }
   }
 };
 </script>

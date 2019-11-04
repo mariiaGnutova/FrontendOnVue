@@ -3,21 +3,21 @@
   <div id="app">
     <Header />
     <div>
-      <router-view/>
+      <router-view />
     </div>
     <Footer />
   </div>
 </template>
 
 <script>
-  import Footer from './components/Footer.vue';
-  import Header from './components/Header.vue';
+import Footer from "./components/Footer.vue";
+import Header from "./components/Header.vue";
 
 export default {
-  name: 'app',
+  name: "app",
   components: {
     Header,
     Footer
   }
-}
+};
 </script>>

@@ -2,14 +2,14 @@
   <div class="filter-container">
     <div class="filter-parent">
       <div
-        class="filter"
+        class="filter button-activ"
         :class="['item-' + index]"
         v-for="(item, index) in items"
         :key="item.message"
         @click="() => handleClick(item.id)"
       >
         <div>{{ item.message }}</div>
-        <img class="forLastElement" src="../assets/pathCopy7.svg" alt="arrow">
+        <img class="forLastElement" src="../assets/pathCopy7.svg" alt="arrow" />
       </div>
     </div>
   </div>
@@ -35,12 +35,8 @@ export default {
   },
   methods: {
     handleClick(id) {
-      this.active = id
+      this.active = id;
     }
   }
 };
-
-
 </script>
-// v-attr manipulates an element’s attributes, 
-//v-repeat clones an element based on an Array, v-on attaches event listeners
